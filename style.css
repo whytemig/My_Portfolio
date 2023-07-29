@@ -3,3 +3,15 @@
     height: 50px;
     object-fit: contain;
 }
+
+.proj-img {
+       flex-grow: 1;
+    object-fit:contain;
+}
+
+.prof-img{
+    width: 600px;
+    height: 400px;
+    border-radius: 25px !important;
+    object-fit: contain;  
+}

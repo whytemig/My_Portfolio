@@ -32,7 +32,7 @@
         <div class="collapse navbar-collapse" id="navmenu">
           <ul class="navbar-nav ms-auto text-capitalize text-md-center text-sm-center text-lg-center fs-4 fw-bold">
             <li class="nav-item">
-              <a href="#about" class="nav-link">About Me</a>
+              <a href="#about" class="nav-link">About</a>
             </li>
             <li class="nav-item">
               <a href="#projects" class="nav-link">Projects</a>
@@ -51,23 +51,23 @@
 
     <section class="bg-dark text-light p-5 text-center mb-2" id="home">
       <div class="container">
-        <div class="d-sm-flex justify-content-around">
+        <div class="d-sm-flex justify-content-evenly">
           <img
-            src="https://placehold.co/600x400/orange/white"
+            src="./img/profile.png"
             alt="profile-pic"
             id="profile-pic"
-            class="img-fluid rounded w-50 d-sm-block d-none"
+            class="img-fluid w-75 my-auto d-sm-block d-none d-md-block d-none rounded-5 prof-img "
           />
-          <div class="section_text my-auto">
-            <p class="section-text1 h1">Hello, I'm</p>
-            <p class="h1 title"><span class="text-warning">Miguel Whyte</span></p>
+          <div class="section_text my-auto p-3">
+            <p class="section-text1 h1 display-3">Hello, I'm</p>
+            <p class="h1 title"><span class="text-warning display-3">Miguel Whyte</span></p>
             <p class="section-text1 ">Software Engineer</p>
-            <div class="btn-container d-flex justify-content-evenly">
-              <button class="btn btn-outline-light rounded-5" onclick="window.open()">
+            <div class="btn-container d-flex justify-content-around justify-content-md-around">
+              <button class="btn btn-outline-warning rounded-5" onclick="window.open('./assests/resume.pdf')">
                 Resume
               </button>
               <a href="#contact"><button
-                class="btn btn-outline-light rounded-5"
+                class="btn btn-outline-warning  rounded-5"
               >
                 Contact Me
               </button></a>
@@ -84,7 +84,7 @@
            <div class="row align-items-center justify-content-center">
             <div class="col-md">
 
-                <div class="d-flex justify-content-evenly">
+                <div class="d-flex justify-content-around">
                     <img src="./img/js.png" alt="" class="w-25 img-fluid rounded icons">
                      <img src="./img/css-3.png" alt="" class="w-25 img-fluid icons">
                      <img src="./img/html-5.png" alt="" class="w-25 img-fluid icons">
@@ -100,40 +100,42 @@
                 </div>
             </div>
             <div class="col-md p-5">
-                <div class="h2  text-center">About Me</div>
-                <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto eligendi quisquam, nesciunt aspernatur delectus molestiae ad facere optio aliquid debitis at hic rerum asperiores omnis et recusandae. Aperiam, aspernatur reprehenderit?</p>
-                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima at mollitia, ullam, rerum possimus, vel quam magnam commodi eos dolor ea est odio rem iusto quisquam neque dicta labore sequi?</p>
+                <div class="h2  text-center display-1">About Me</div>
+                <p class="lead" style="text-indent: 50px;"> My name is <strong class="text-decoration-underline">Miguel Whyte</strong>. I am a Software Enginner. I have a profound interest in coding, which initially sparked with JavaScript, HTML, and CSS. As I delved into web development, I found myself drawn to their versatility and power in crafting interactive and visually appealing websites. As my journey continued, I sought to expand my skill set, eagerly embracing more advanced technologies like Node.js, Express.js, and React.js.</p>
+                <p class="lead" style="text-indent: 50px;">With each step, I found a deeper understanding of building robust and dynamic applications. However, it was my fascination with APIs and databases that truly ignited my passion. Understanding how to integrate external data sources and manipulate information in databases allowed me to create more sophisticated and interconnected applications. I am excited to continue honing my skills and exploring the limitless possibilities that coding offers in the ever-evolving world of software development.</p>
             </div>
            </div>
     </section>
 
     <!-- projects -->
     
-    <section id="projects" class="bg-dark text-light p-5">
+    <section id="projects" class="bg-dark text-light p-5 mb-3">
         <div class="container">
-            <div class="h2 text-center text-warning">My Projects</div>
-            <p class="lead text-center text-white mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem esse optio blanditiis deleniti maxime, nisi illum, harum itaque perspiciatis nihil quisquam sapiente ex tenetur rem nobis deserunt alias? Quisquam, natus.</p>
+            <div class="h2 text-center text-warning display-1">My Projects</div>
+            <p class="lead text-center text-white mb-5">These projects below showcase my passion for APIs and databases, creating user-friendly, innovative solutions that enrich lives.</p>
 
-            <div class="row g-4">
+            <div class="row g-4 d-flex justify-content-center">
                 <div class="col-md-6 col-lg-3">
                     <div class="card bg-light">
                         <div class="card-body text-center">
-                            <img src="https://placehold.co/600x400/orange/white" alt="project image" class="img-fluid mb-3">
-                            <div class="h3 card-title mb-3">Project #1</div>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus eos, in rem nostrum eum itaque magni id expedita autem quo sed beatae iusto iure distinctio adipisci cumque voluptatum mollitia non.</p>
+                            <img src="./img/Ymmi-page.png" alt="project image" class="img-fluid mb-3  rounded proj-img">
+                            <div class="h3 card-title mb-3">YUMMI</div>
+                            <figcaption class="blockquote-footer">
+                              Recipe Meal Generator</figcaption>
+                            <p class="lh-1">This app utilizes an extensive API database to generate a variety of meal cards, each offering detailed information about the ingredients, nutrients, and step-by-step instructions for preparing the dish.</p>
                         </div>
                         <div class="card-footer d-flex justify-content-evenly">
-                            <a href="#" class="text-danger"><i class="bi bi-youtube h1"></i></a>
-                        <a href="#" class="text-dark"><i class="bi bi-github h1"></i></a>
+                            <a href="#" class="text-danger" ><i class="bi bi-youtube h1"></i></a>
+                        <a href="https://github.com/whytemig/YUMMI-API-Meal-Recipe-Generator" class="text-dark" target="_blank"><i class="bi bi-github h1"></i></a>
                         </div>                        
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="card bg-light">
                         <div class="card-body text-center">
-                            <img src="https://placehold.co/600x400/orange/white" alt="project image" class="img-fluid mb-3">
+                            <img src="https://placehold.co/600x400/orange/white" alt="project image" class="img-fluid mb-3  rounded proj-img">
                             <div class="h3 card-title mb-3">Project #1</div>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus eos, in rem nostrum eum itaque magni id expedita autem quo sed beatae iusto iure distinctio adipisci cumque voluptatum mollitia non.</p>
+                            <p class="lh-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus eos, in rem nostrum eum itaque magni id expedita autem quo sed beatae iusto iure distinctio adipisci cumque voluptatum mollitia non.</p>
                         </div>
                         <div class="card-footer d-flex justify-content-evenly">
                             <a href="#" class="text-danger"><i class="bi bi-youtube h1"></i></a>
@@ -144,26 +146,30 @@
                 <div class="col-md-6 col-lg-3">
                     <div class="card bg-light">
                         <div class="card-body text-center">
-                            <img src="https://placehold.co/600x400/orange/white" alt="project image" class="img-fluid mb-3">
-                            <div class="h3 card-title mb-3">Project #1</div>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus eos, in rem nostrum eum itaque magni id expedita autem quo sed beatae iusto iure distinctio adipisci cumque voluptatum mollitia non.</p>
+                            <img src="https://placehold.co/600x400/orange/white" alt="project image" class="img-fluid mb-3 rounded proj-img">
+                            <div class="h3 card-title mb-3">The Penman</div>
+                            <figcaption class="blockquote-footer">
+                              Diverse Insights and Perspectives</figcaption>
+                            <p class="lh-1">A meticulously crafted blog that showcases a diverse collection of thought-provoking articles and expert opinions. Developed using a state-of-the-art REST API and a robust database.</p>
                         </div>
                         <div class="card-footer d-flex justify-content-evenly">
                             <a href="#" class="text-danger"><i class="bi bi-youtube h1"></i></a>
-                            <a href="#" class="text-dark"><i class="bi bi-github h1"></i></a>
+                            <a href="https://github.com/whytemig/Blog-Backend" class="text-dark" target="_blank"><i class="bi bi-github h1"></i></a>
                         </div>                        
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="card bg-light">
                         <div class="card-body text-center">
-                            <img src="https://placehold.co/600x400/orange/white" alt="project image" class="img-fluid mb-3">
-                            <div class="h3 card-title mb-3">Project #1</div>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus eos, in rem nostrum eum itaque magni id expedita autem quo sed beatae iusto iure distinctio adipisci cumque voluptatum mollitia non.</p>
+                            <img src="./img/Age-App-page.png" alt="project image" class="img-fluid mb-3  rounded proj-img">
+                            <div class="h3 card-title mb-3">AgeMaster Pro</div>
+                            <figcaption class="blockquote-footer">
+                              Advanced Age Calculator.</figcaption>
+                            <p class="lh-1">This sophisticated application employs cutting-edge algorithms to accurately determine age based on date of birth. AgeMaster Pro stands as the ultimate tool for effortlessly computing ages with utmost professionalism and reliability.</p>
                         </div>
                         <div class="card-footer d-flex justify-content-evenly">
                             <a href="#" class="text-danger"><i class="bi bi-youtube h1"></i></a>
-                        <a href="#" class="text-dark"><i class="bi bi-github h1"></i></a>
+                        <a href="https://github.com/whytemig/Age_Calculator" class="text-dark" target="_blank"><i class="bi bi-github h1"></i></a>
                         </div>                        
                     </div>
                 </div>
@@ -176,24 +182,24 @@
     <section id="contact" class="p-3 bg-light">
         <div class="container">
             <div class="row g-4 m-auto">
-                <h2 class="text-center mb-2">Contact Info</h2>
-              <div class="col-md d-flex justify-content-center">
+                <h2 class="text-center mb-2 display-1">Contact Info</h2>
+              <div class="col-md d-flex justify-content-center justify-content-lg-center">
                 <ul class="list-group list-group-flush lead">
                     <li class="list-group-item bg-light">
                         <span class="fw-bold">Email:</span>
-                        <a href="" class="text-decoration-none text-dark">Some@email.com <i class="bi bi-envelope text-info h1"></i></a>
+                        <a href="" class="text-decoration-none text-dark" target="_blank">miguel89whyte@gmail.com <i class="bi bi-envelope text-info h1"></i></a>
                     </li>
                     <li class="list-group-item bg-light">
                         <span class="fw-bold">LinkedIn:</span>
-                        <a href="" class="text-decoration-none text-dark">linkedprofile <i class="bi bi-linkedin text-primary h1"></i></a>
+                        <a href="https://www.linkedin.com/in/miguel-whyte/" class="text-decoration-none text-dark" target="_blank">Miguel-Whyte <i class="bi bi-linkedin text-primary h1"></i></a>
                     </li>
                 </ul>
               </div>  
-              <div class="col-md d-flex justify-content-center">
+              <div class="col-md d-flex justify-content-center justify-content-lg-center">
                 <ul class="list-group list-group-flush lead">
                     <li class="list-group-item bg-light">
                         <span class="fw-bold">Github:</span>
-                        <a href="" class="text-decoration-none text-dark">Github <i class="bi bi-github text-dark h1"></i></a>
+                        <a href="https://github.com/whytemig" class="text-decoration-none text-dark" target="_blank">Whytemig-Github <i class="bi bi-github text-dark h1"></i></a>
                     </li>
                     <li class="list-group-item bg-light">
                         <span class="fw-bold">Youtube:</span>
@@ -208,9 +214,9 @@
     <!-- footer -->
     <footer class="p-5 bg-dark text-warning text-center position-relative">
         <div class="container">
-            <p class="lead">Copyright &copy; Miguel Whyte</p>
+            <p class="lead">Copyright &copy; Miguel Whyte <script>document.write(new Date().getFullYear())</script></p>
             <a href="#" class="position-absolute bottom-0 end-0 p-5">
-                <i class="bi bi-caret-up-square h1"></i>
+                <i class="bi bi-caret-up-square h1 text-danger"></i>
             </a>
         </div>
     </footer>
